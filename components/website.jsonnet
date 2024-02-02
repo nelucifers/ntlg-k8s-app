@@ -7,6 +7,13 @@ local params = p.components.website;
 
 [
   {
+    apiVersion: 'v1',
+    kind: 'Namespace',
+    metadata: {
+      name: env.namespace,
+    },
+  },
+  {
     apiVersion: 'apps/v1',
     kind: 'Deployment',
     metadata: {
@@ -31,7 +38,7 @@ local params = p.components.website;
         spec: {
           containers: [
             {
-              name: 'darkhttpd',
+              name: 'nginx-app',
               image: params.image,
               ports: [
                 {
