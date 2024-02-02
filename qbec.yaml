@@ -1,0 +1,9 @@
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: ntlg-web-app
+spec:
+  environments:
+    default:
+      defaultNamespace: application
+      server: https://127.0.0.1:6443
