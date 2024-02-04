@@ -5,7 +5,7 @@ base {
     website: {
       replicas: 1,
       name: 'web-app',
-      image: 'nelucifers/ntlg-dplm:19',
+      image: 'nelucifers/ntlg-dplm:v0.0.6',
       containerPort: 80,
       servicePort: 80,
       loadBalancerPort: 8080,
