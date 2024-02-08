@@ -1,5 +1,5 @@
 local base = import './base.libsonnet';
-local imageTag = importstr './value_tag';
+local imageTag = std.strReplace(importstr './value_tag', '\n', '');
 
 base {
   components +: {
